@@ -1,0 +1,90 @@
+<!-- There are two types of lists -->
+<!-- 1. Ordered lists
+        (ex. 1,2,3(default) or A,B,C(type="A") or a,b,c(type="a")
+        or I,II,III(type="I") or i,ii,iii(type="i") ) 
+      2. Unordered list
+        (ex. disc(default),square,circle,none)
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <title>Lists</title>
+</head>
+
+<body>
+    <!--**************************************Unordered Lists**************************************-->
+
+
+    <!-- Following will show squared bullets by default -->
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <!-- Try Example -->
+    <ul type="square">
+        <li>List 4</li>
+        <li>List 5</li>
+        <ul type="circle"> <!--Make sub categories by nested ul-->
+            <li>List 5.1</li>
+            <li>List 5.2</li>
+        </ul>
+        <li>List 6</li>
+        <ul type="none"> <!--Will not show any bullets-->
+            <li>List 6.1</li>
+            <li>List 6.2</li>
+        </ul>
+    </ul>
+
+
+    <!--**************************************Ordered Lists**************************************-->
+
+    <!--Following will sort with 1,2,3 by default-->
+    <ol>
+        <li>Ordered List 1</li>
+        <li>Ordered List 2</li>
+    </ol>
+    <!--Following will sort iv,iii,ii order cause it is reverse and small i as 
+    well as numbering should start from 4-.
+    If it was not reversed it would be iv,v,vi-->
+    <ol type="i" reversed start="4">
+        <li>Ordered List 3</li>
+        <li>Ordered List 4</li>
+        <li>Ordered List 5</li>
+    </ol>
+
+    <!--Try-->
+    <ol type="a" start="29">
+        <li>Ordered List 6</li> <!--there are only 27 members in abcd. It starts from 27 hence 
+        everything is used already so it will give index like aa,ab,ac etc etc-->
+        <li>Ordered List 7</li>
+        <li>Ordered List 8</li>
+    </ol>
+
+    <!--HW-->
+    <!-- Output
+               III Ordered HW List 1
+                II Ordered HW List 2
+                    a Ordered HW List 2.1
+                    b Ordered HW List 2.2
+                I Ordered HW List 3
+                    E Ordered HW List 3.1
+                    D Ordered HW List 3.2 -->
+    <ol type="I" reversed >
+        <li>Ordered HW List 1</li> 
+        <li>Ordered HW List 2</li>
+        <ol type="a">
+            <li>Ordered HW List 2.1</li> 
+            <li>Ordered HW List 2.2</li>           
+        </ol>
+        <li>Ordered HW List 3</li>
+        <ol type="A" reversed start="5">
+            <li>Ordered HW List 3.1</li> 
+            <li>Ordered HW List 3.2</li>   
+        </ol>
+    </ol>
+</body>
+
+</html>

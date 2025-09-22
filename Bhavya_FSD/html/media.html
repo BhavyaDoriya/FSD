@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Tags Related to Medias</title>
+</head>
+
+<body>
+    <!-- Add image to your webpage
+        alt-- is used if by chance your image doesn't load it will show text written in alt
+        img tag is *inline*
+        -->
+    <img src="../util/images/favicon.png" alt="Image" height="250" width="300" />
+    <img src="../util/images/favicon.png" alt="Image" height="250" width="300" />
+    <!-- Figure and figure caption are block level-->
+    <figure>
+
+        <img src="../util/images/favicon.png" alt="Image" height="250" width="300" />
+        <!--If i don't write figurecaption below then the images will be next to each other-->
+        <!--But because figcaption is block level that it moves to next line -->
+        <figcaption>Figure 1 Image</figcaption>
+        <img src="../util/images/favicon.png" alt="Image" height="250" width="300" />
+    </figure>
+
+    <!--For Audio-->
+    <!--controls allow: play pause skip playback speed-->
+    <!--Loop will run audio continuosly-->
+    <!--Muted will intialize audio as muted-->
+    <audio controls loop muted>
+        <!--can use type=audio/mpeg as well-->
+        <!--You can add src in audio tag as well but source is used to add multiple 
+        types of audio files so that if one doesn't work you can use another audio file extension -->
+        <source type="audio/mp3" src="../util/2.mp3">
+        </source>
+        <!-- Will give following message if your browser doesn't support it-->
+        Your Browser doesn't support audio tag
+    </audio>
+    <!--For Video-->
+    <video controls loop autoplay muted height="100" width="200">
+        <source src="../util/1.mp4" type="video/mp4">
+        Your browser doesn't support video
+    </video>
+
+</body>
+
+</html>

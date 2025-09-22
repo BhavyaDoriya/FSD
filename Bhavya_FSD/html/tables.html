@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Tables</title>
+</head>
+<body>
+    <!-- Cellpadding: distance between text and border -->
+    <!-- Cellspacing: distance between two borders of individual cells -->
+     <!--Width: describes how much ratio of the screen the table is gonna occupy-->
+     <!-- border is deplicated cause of css (cause it prefers us to use css in these fields) -->
+      <!-- rules: used for inner borders of table
+            values:
+            all:All inner borders will disappear
+            rows: will only provide horizontal seperator.No vertical seperator
+            cols: will only provide vertical seperator.No horizontal seperator
+            none: No inner borders
+            groups: Will give borders acc to group(ex. thead,tbody,tfoot)
+      -->
+    <table border="5" cellpadding="10" cellspacing="3" width="20%" rules="groups">
+        <caption>Table Example</caption><!--Table name=caption-->
+        <thead><tr> <!--Write column names in thead-->
+            <th>Roll No</th><!--th for table heading(where we list columns)-->
+            <th>Name</th>
+            </tr>
+        </thead>
+        <tbody><!--Body will describe table content-->
+            <tr><td>1</td><td>ABC</td></tr>
+            <tr><td>2</td><td>XYZ</td></tr>
+        </tbody>
+        <tfoot><!--footer will contain footer of table(ex:Total,avg etc etc)-->
+            <tr>
+                <th>Total</th>
+                <th>2</th>
+            </tr>
+        </tfoot>
+    </table>   
+
+    <!--Rowspan and Colspan-->
+    <!-- Rowspan
+     ________________
+    |       |        | 
+    |       |   B    |     
+    |   A   |________|
+    |       |    C   |
+    |_______|________| -->
+    <table border="3" cellpadding="15">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+
+    <!--Colspan-->
+    <!-- 
+    _________________
+    |                | 
+    |       A        |     
+    |________________|
+    |  B    |    C   |
+    |_______|________| 
+     -->
+        <table border="3" cellpadding="15">
+        <tr>
+            <td colspan="2">A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>C</td>
+
+        </tr>
+    </table>
+</body>
+</html>
