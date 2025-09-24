@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- 
+                                                            *Parameters for Form*
+    
+      method: can have multiple values
+      enctype:
+    -->
+    <form action="#" method="get">
+        <!-- 
+            Fieldset is used to ......
+        -->
+        <fieldset>
+            <legend>Information</legend>
+            <label for="uname">Username</label>
+            <!-- 
+                type:
+                id:
+                name:
+                autofocus:
+                autocomplete:
+                placeholder:
+                maxlength:
+                required:
+                value:
+             -->
+            <input type"text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name" maxlength="20"
+                required />
+            <br>
+            <label for="eid">Email</label>
+            <input type="email" placeholder="abc@gmail.com" required name="eid" />
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="ex. Abcd@123" required minlength="8" maxlength="12" />
+            <br>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="9999777745" required />
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Click To Submit" />
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
