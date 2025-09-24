@@ -8,8 +8,35 @@
 <body>
     <!-- 
                                                             *Parameters for Form*
-    
-      method: can have multiple values
+      action: defines where the form data is sent after submission
+      method: defines how the form data is sent. This matters for both security and URL format.
+              ***values that method can contain:
+              The two primary methods are:
+
+                (1)GET:
+                Appends the form data to the URL query string.
+                Example: submitting username=alex and email=a@b.com →
+                http://example.com/?uname=alex&eid=a%40b.com
+                Pros: easy to bookmark/share, quick for simple searches.
+                Cons: data is visible in the URL (not safe for passwords).
+                
+                (2)POST:
+                Sends the form data in the HTTP request body (not in the URL).
+                Pros: safer for sensitive data, no length limitation like GET.
+                Cons: not bookmarkable, slightly more overhead.
+                ex.
+                The browser will request:
+                    POST /submit HTTP/1.1
+                    Host: example.com
+                    Content-Type: application/x-www-form-urlencoded
+                    Content-Length: 29
+                    uname=alex&eid=alex%40gmail.com
+                Here the form data (uname=alex&eid=alex%40gmail.com) is in the body of the HTTP request, not in the URL.
+                That makes it less visible (not in the address bar, not in browser history).
+                Also allows sending larger amounts of data than a URL would allow.
+                
+                (3)Rarely used, but exist:
+                PUT, DELETE, PATCH → supported by HTML5 but usually need JavaScript/AJAX. Mostly for REST APIs, not regular forms.
       enctype:
     -->
     <form action="#" method="get">
@@ -19,18 +46,28 @@
         <fieldset>
             <legend>Information</legend>
             <label for="uname">Username</label>
-            <!-- 
-                type:
-                id:
-                name:
-                autofocus:
-                autocomplete:
-                placeholder:
-                maxlength:
-                required:
-                value:
+            <!--                                    *******input parameters********
+                type:   defines the kind of input (text, password, email, tel, number, etc.). 
+                        Each type gives the browser special behaviors (like validation or a special keyboard on mobile).
+
+                id:     unique identifier in the page → lets <label for="id"> link to the input, or JavaScript find it.
+
+                name:   the key that will appear in the form submission data.
+                        ex. <input name="uname" value="alex">
+                        data sent as uname=alex
+                        if name is not written it will not be sent to server
+
+                autofocus:      automatically puts the cursor in that field when the page loads.
+
+                autocomplete:   suggests saved values (like saved usernames, emails, addresses, etc.).
+                                 Can be "on", "off", or more specific hints like "email", "username", "current-password".
+                                 
+                placeholder:    hint text shown inside the input until the user types something.
+                maxlength:      maximum number of characters allowed.
+                required:       makes the field mandatory before the form can be submitted
+                value:          pre-fills the input with default text/value.
              -->
-            <input type"text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name" maxlength="20"
+            <input type="text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name" maxlength="20"
                 required />
             <br>
             <label for="eid">Email</label>
@@ -40,6 +77,19 @@
             <input type="password" placeholder="ex. Abcd@123" required minlength="8" maxlength="12" />
             <br>
             <label>Phone</label>
+
+            <!-- 
+            
+            What effect does type="tel" add?
+
+                Unlike password or email, tel does not add automatic validation.
+
+                It doesn’t check if input is only digits, or enforce formats like phone numbers.
+
+                However, browsers (especially on mobile devices) show a numeric keypad when focused, which makes it easier for the user to enter digits.
+
+                If you want validation (like only digits or specific phone number formats), you’d add a pattern -->
+
             <input type="tel" name="phone" placeholder="9999777745" required />
         </fieldset>
         <fieldset>
