@@ -7,7 +7,7 @@
 
 <body>
     <!-- 
-                                                            *Parameters for Form*
+                                        *Parameters for Form*
       action: defines where the form data is sent after submission
       method: defines how the form data is sent. This matters for both security and URL format.
               ***values that method can contain:
@@ -37,12 +37,9 @@
                 
                 (3)Rarely used, but exist:
                 PUT, DELETE, PATCH → supported by HTML5 but usually need JavaScript/AJAX. Mostly for REST APIs, not regular forms.
-      enctype:
+                enctype:
     -->
     <form action="#" method="get">
-        <!-- 
-            Fieldset is used to ......
-        -->
         <fieldset>
             <legend>Information</legend>
             <label for="uname">Username</label>
@@ -67,8 +64,8 @@
                 required:       makes the field mandatory before the form can be submitted
                 value:          pre-fills the input with default text/value.
              -->
-            <input type="text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name" maxlength="20"
-                required />
+            <input type="text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name"
+                maxlength="20" required />
             <br>
             <label for="eid">Email</label>
             <input type="email" placeholder="abc@gmail.com" required name="eid" />
@@ -91,9 +88,84 @@
                 If you want validation (like only digits or specific phone number formats), you’d add a pattern -->
 
             <input type="tel" name="phone" placeholder="9999777745" required />
+            <br>
+            <!-- RadioButtons : used to allow user to only choose one of the given options
+                 &nbsp;: used to give blank space
+            -->
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" checked />Male &nbsp;
+            <input type="radio" name="gender" value="female" />Female
+            <br>
+            <!-- CheckBox : used to allow user to choose multiple options of the given options -->
+            <label>Hobby</label>
+            <input type="checkbox" name="hobby" value="drawing" />Drawing
+            &nbsp;
+            <input type="checkbox" name="hobby" value="music" />Music
+            <br>
+            <!-- textarea: textarea is itself a tag it is not used as type in input tag
+             It is not a stand alone tag.
+             The text written between opening and closing tag is used as default value for submission -->
+            <label>Message</label>
+            <textarea name="msg" rows="10" cols="20" placeholder="Type Your Message">Hi How are you</textarea>
         </fieldset>
         <fieldset>
-            <input type="submit" value="Click To Submit" />
+            <legend>Additional Information</legend>
+            <label>Date Of Birth</label>
+            <input type="date" name="dob" min="2000-09-03" max="2025-12-31" />
+            <br>
+            <label>Age</label>
+            <input type="number" name="age" min="18" max="35" value="20" step="1" />
+            <br>
+            <label>Price</label>
+            <input type="range" name="price" min="100" max="1000" value="200" step="100" />
+            <label>Color</label>
+            <br>
+            <input type="Color" name="clr" value="#000000" />
+            <br>
+            <!-- For dropdown: select -->
+            <label>Select city</label>
+            <select name="city">
+                <option value=" ">Select</option>
+                <option value="ahm">Ahmedabad</option>
+                <option value="gandhinagar">Gandhinagar</option>
+                <option value="rajkot">Rajkot</option>
+            </select>
+            <br>
+            <label>Select Branch</label>
+            <select name="branch" required>
+                <option value="Select" hidden selected disabled>Select</option>
+                <optgroup label="Computer">
+                    <option value="cse">CSE</option>
+                    <option value="it">IT</option>
+                </optgroup>
+                <optgroup label="OTHER">
+                    <option value="ec">EC</option>
+                    <option value="civil">Civil</option>
+                </optgroup>
+            </select>
+            <br>
+            <label>Browsers</label>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="chrome">
+                <option value="edge">
+                <option value="safari">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Hidden Readonly disabled</legend>
+            <input type="hidden" name="uid" value="1234" />
+            <br>
+            <input type="text" value="CSE" readonly />
+            <br>
+            <input type="text" name="promo" value="LJU500" disabled />
+        </fieldset>
+        <fieldset>
+            <!-- <input type="submit" value="Click To Submit" /> -->
+            <input type="reset" value="Reset Form" />
+            <input type="button" value="Submit Button" />
+            <Button type="submit">Submit Here</Button><!--Same as commented part above-->
+            <Button>Button</Button>
         </fieldset>
 
     </form>
