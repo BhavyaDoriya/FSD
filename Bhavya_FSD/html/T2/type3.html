@@ -1,0 +1,30 @@
+<!-- External CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/T2/typesOfCss3.css">
+    <style>
+        /* CSS Priority: inline> external & embedded */
+        /* Between external & embedded,there is matter of sequence in priority .
+           if embedded is written after external in head then embedded will be applied
+           if external is written after embedded in head then external will be applied*/
+        /* important keyword will apply that style compulsory no matter of what kind of css is used 
+           (checkout:"../../css/T2/typesOfCss3.css")*/
+        p{
+            color:yellow ;
+        }
+    </style>
+</head>
+<body>
+    <h2>External css</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <h2 style="color: green ;">Heading 2</h2>
+
+</body>
+</html>
