@@ -1,0 +1,49 @@
+/* This file is linked with ../../html/selector3.html */
+/* Different types of selectors are:
+    1:element
+    2:id(#)
+    3:class(.)
+    4:universal(*)
+    5:attribute
+    6:descendant
+    7:child
+    8:grouping
+
+    coverage of topics:: 
+    1-4 & 8 in selector1.css file
+    5 in selector3.css file
+    6-7 in selector2.css file
+    
+*/
+
+/* Attribute selector */
+
+/* Syntax:
+    Element[attribute=value]    
+    {
+
+    }   
+*/
+input[type=email]
+{
+    width: 500px;
+    background-color: yellow;
+    color:blue;
+    padding:20px;
+}
+input[type=button]
+{
+    width: 120px;
+    background-color: #000;
+    color:white;
+    font-size:20px;
+}
+a[target=_blank]
+{
+    color:purple;
+    text-decoration: none;
+    font-size: 25px;
+}
+a{
+    color:red;
+}
