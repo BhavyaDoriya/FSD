@@ -1,7 +1,0 @@
-/* 
-    CSS specificity(Priority list for css):
-    (1)Inline
-    (2)Id
-    (3)class,psuedo class (:hover,:focus,:active,:checked,:visited,nth-child(n)),attribute
-    (4)element,psuedo element(::first-line,::marker,::selection)
-*/
