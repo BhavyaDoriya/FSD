@@ -6,7 +6,7 @@
     font-variant:normal/small-caps
 */
 /* Google fonts */
-/* You can only use import with external css,can't use link */
+/* You can only use import with external css, but can't use link */
 /* while internal css either link or import both works fine */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 h1{
