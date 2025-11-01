@@ -1,0 +1,35 @@
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+a:link
+{
+    color:red
+}
+a:visited
+{
+    color:purple;
+}
+a:hover
+{
+    color:green;
+}
+a:active
+{
+    color:orange
+}
+input:focus
+{
+    background-color: yellow;
+    color:red;
+}
+ul li:nth-child(odd)
+{
+    font-size: 30px;
+    color:purple
+}
+ul li:not(#special)
+{
+    color:green;
+    font-size: 15px;
+}

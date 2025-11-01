@@ -13,4 +13,6 @@ h1{
     font-family: "Kalam", cursive;
     font-weight: 700;
     font-style: normal;
+    font-variant: small-caps;
+    font-style: italic;
 }

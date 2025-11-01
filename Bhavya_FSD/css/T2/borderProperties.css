@@ -1,0 +1,14 @@
+h1
+{
+    text-align: center;
+    border-color:red green blue yellow; /*sequence for color:top right bottom left*/
+    border-width:10px 20px 30px 40px; /*sequence for width:top right bottom left*/
+    border-style:solid dashed dotted double;
+}h3{
+        /* border:3px solid red; */
+        border-left:3px solid green;
+        border-right:2px dashed red;
+        border-bottom:4px double blue;
+        border-top:5px dotted maroon; /*specific border locations*/
+
+}
