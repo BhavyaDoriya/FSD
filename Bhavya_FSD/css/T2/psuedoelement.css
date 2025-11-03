@@ -1,0 +1,39 @@
+/* Syntax:
+    Selector::psuedo element
+    first-line
+    first-letter
+    selection
+    before
+    after
+    marker
+*/
+.p1::first-line
+{
+    color:blue;
+    font-size: 20px;
+    font-style: italic;
+}
+.p1::first-letter
+{
+    color:red;
+    font-size: 60px;
+    text-decoration: underline;
+}
+.p1::selection
+{
+    background-color: pink;
+    color:red;
+}
+/* To apply above to entire page you can write "::selection" instead of ".p1::selection" */
+.p1::before{
+    content: url("../../images/bhatia.jpg");
+}
+.p1::after{
+    content:"🥛";
+}
+ul li::marker
+{
+    font-size: 40px;
+    color:purple;
+    content:"💀"
+}

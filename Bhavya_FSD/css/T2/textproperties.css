@@ -1,7 +1,7 @@
 /* 
     color:hex,RGB,name;
     text-algin:left/right/center/start/end;
-    text-indent:px,%,em;
+    text_indent:px,%,em;
     text-transform:none/capitalized/uppercase/lowercase;
     text-decoration:underline/overline/line-through/none/underline overline;
     letter-spacing:px/normal/em;
