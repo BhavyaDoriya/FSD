@@ -1,0 +1,12 @@
+.news
+{
+    column-count: 4;
+    column-gap: 20px;
+    column-rule-style: dashed;
+    column-rule-color:blue;
+    column-rule-width:8px;
+    text-align: justify;
+    /* shorthand: 
+        colum-rule:width style color
+    */
+}

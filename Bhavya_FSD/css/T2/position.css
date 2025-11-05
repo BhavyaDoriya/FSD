@@ -21,13 +21,55 @@
 {
     background-color: red;
     top:100px;
-    right:100px;
+    left:100px;
+    /* default position:static */
+    /* above won't move box to the left cause position is static */
 }
-#box2
+#box2,#box6
 {
     background-color: yellow;
     position: relative;
     top:100px;
     right:100px;
     left:200px;
+}  
+#box3
+{
+    position:absolute;
+    top:50px;
+    right:0px;
+    /* absolute is moving position according to outer container-1.
+        if outer container was not relative it wouldn't have moved according to containers top 
+        and right instead it will move accordingly entire viewport's(body's) top right left
+         and bottom coordinates */
+    background-color: lightblue;
 }
+#box4{
+    position: fixed;
+    bottom:100px;
+    right:50px;
+    background-color: goldenrod;
+    /* it will be fixed on your display not just on some part of your page but 
+    the screen it self so even if you scroll down it will be fixed there */
+
+}
+#box5
+{
+    position:sticky;
+    top:20px;
+    /* background-color: gray;
+     */
+     background-image: linear-gradient(to left,violet,indigo,blue,green,yellow,orange,red);
+    /* this will be only visible in container if you scroll but in 
+    container1 it will not be visible when scroll down */
+}
+#box6
+{
+    /* overlapping box2 and box 6 */
+    background-color: yellow;
+    position: absolute;
+    top:200px;
+    left:150px;
+    /* z index will only work if you use position whic is not static */
+    z-index: -5;
+}  

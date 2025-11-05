@@ -1,0 +1,26 @@
+.g1{
+    display: grid;
+    grid-template-columns: 200px 1fr 2fr;/*fixed fr fr*/
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    background-color: gray;
+    padding: 10px;
+    margin:10px;
+}
+.box,.item
+{
+    border: solid red;
+    text-align: center;
+    padding: 10px;
+    background-image: url("../../images/cat2.jpeg");
+}
+.g2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;/*fixed fr fr*/
+    grid-template-rows: 100px;
+    gap: 10px;
+    height: 150px;
+    background-color: gray;
+    border:10px solid yellow;
+    padding: 10px;
+}
