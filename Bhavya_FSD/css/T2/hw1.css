@@ -1,0 +1,21 @@
+.c1
+{
+    height: 200px;
+    width:200px;
+    display: block;
+    padding:20px;
+    border:3px solid red;
+    margin:0 0;
+    transition-property: transform,background-color,border-radius;
+    transition-duration: 10s,5s,3s;
+    transition-delay:2s ;
+    transition-timing-function: ease-in;
+}
+.c1:hover
+{
+    transform:scale(4,4) rotate(900deg)  translate(100px,0px) ; /*transform:scaleX(2);transform:scaleY(2) */
+    background-color: red;
+    padding:30px;
+    border-radius: 60%;
+    border:8px dotted green;
+}
