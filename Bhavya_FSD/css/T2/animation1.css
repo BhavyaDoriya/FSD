@@ -1,0 +1,62 @@
+.b1{
+    z-index: 1;
+    width:200px;
+    height: 100px;
+    animation-name: carmove;
+    animation-duration:10s ;
+    /* animation-delay: 2s; */
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    position: absolute;
+}
+.b2{
+    top:40%;
+    left:80%;
+    animation-name: sirmove;
+    animation-duration:2s ;
+    animation-delay: 4.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction:; */
+    position: absolute;
+}
+@keyframes carmove {
+    0%{
+        top:40%;
+        left:0;
+    }
+    25%{
+        top:0%;
+        left:40%;
+    }
+    50%{
+        top:40%;
+        left:80%
+    }
+    75%{
+        top:80%;
+        left:40%;
+    }
+    100%
+    {
+       top:40%;
+       left:0%;
+    }
+}
+
+@keyframes sirmove {
+    0%{
+        top:40%;
+        left:80%;
+        transform:rotate(0deg)
+    }
+    100%
+    {
+        top:-40%;
+        left:80%;
+        transform:rotate(900deg)
+
+    }
+}

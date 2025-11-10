@@ -1,0 +1,37 @@
+body{
+    background-image: linear-gradient(to bottom,lightpink,lightblue,lightgreen);
+}
+.l1{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg,violet,indigo,blue,green,yellow,orange,red);
+    border:3px solid white;
+    background-color: black;/*will be only visible when gradient doesn't work*/
+}
+.l2{
+    width: 80%;
+    height:100px;
+    text-align: center;
+    font-size: 60px;
+    font-weight:900;
+    background: linear-gradient(to right ,blue,green,orange,purple,yellow,pink);
+    background-clip: text;
+    color:transparent;
+}
+.r1{
+    width: 300px;
+    height: 200px;
+    background: radial-gradient(circle,blue,green,red,yellow 50%);
+}
+.c1{
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(from 90deg,red 45deg,green 90deg,blue 180deg,purple 270deg,orange 310deg);
+}
+.c2{
+    height:200px;
+    width:200px;
+    border-radius: 60%;
+    border:30px solid rgb(30, 255, 0);
+    background: conic-gradient(green 0deg,green 90deg,black 90deg,black 180deg,green 180deg,green 270deg,black 270deg,black 360deg);
+}
