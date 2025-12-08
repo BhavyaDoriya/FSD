@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Update profile</button>
+    <div class="modal fade" id="mymodal">
+        <!-- modal-sm modal-lg modal-xl modal-fullscreen -->
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Update Profile Details</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <formfield method="get">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </formfield>
+                    </form>
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquid ut placeat asperiores quae
+                    consequatur delectus recusandae iusto, in eius! Natus a modi, repudiandae minus voluptates atque
+                    quos deleniti. Blanditiis!
+                    Minus eveniet hic quos tempore! Consequuntur reprehenderit aperiam magnam architecto sapiente
+                    dolorem pariatur adipisci itaque minima corrupti eveniet beatae sint culpa necessitatibus,
+                    accusantium ducimus corporis aliquam facilis tenetur. Ut, quibusdam.
+                    Error veniam rem reiciendis impedit soluta nisi aliquam magnam sunt mollitia tempore animi
+                    dignissimos autem pariatur, ratione adipisci officia. Consequatur placeat est aperiam molestiae
+                    accusantium nesciunt deserunt voluptatum doloribus fugit.
+                    Eveniet incidunt id, voluptatum quisquam cupiditate vero rerum dignissimos distinctio, excepturi
+                    expedita ipsam, corporis dicta voluptates esse reprehenderit ut tempore dolore ad exercitationem
+                    quae? Culpa ipsa similique quos totam perferendis?
+                    Totam itaque dolore nihil maxime minus optio culpa eaque ex fugiat, nisi pariatur officia commodi
+                    iure obcaecati repudiandae qui similique tempore corporis assumenda? Alias quam iure optio provident
+                    corporis qui?
+                    Repellendus totam alias possimus fugit in impedit quibusdam qui debitis aut, laboriosam nam culpa
+                    odio ducimus, sapiente facilis obcaecati reiciendis natus eaque quod neque consequatur corporis
+                    voluptatem. Accusamus, laboriosam ab!
+                    Autem, culpa minus aperiam eius, harum nostrum est explicabo fugit excepturi id consectetur veniam
+                    totam doloremque minima repellendus cupiditate voluptate amet pariatur. Earum aut atque
+                    exercitationem, fuga repudiandae numquam amet.
+                    Pariatur, beatae! Obcaecati doloribus natus nam, officiis suscipit ex. Enim voluptatibus officia aut
+                    inventore eos laudantium quod accusantium quasi perferendis quae facilis necessitatibus, sapiente
+                    fugit optio deserunt vel odit laboriosam.
+                    Eligendi non explicabo harum perferendis nihil iure atque, rerum mollitia est quaerat ab minus
+                    dolorem expedita voluptate commodi architecto vitae reprehenderit facere consequatur corporis saepe
+                    facilis qui ad autem! Excepturi!
+                    Officia nulla veniam quo asperiores iure quisquam adipisci dolorem, molestiae minus eligendi, facere
+                    corrupti sunt natus! Facilis magnam, aliquam cum ratione sed magni officiis voluptatum quasi
+                    pariatur non, nemo nihil!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                    <button class="btn btn-success" data-bs-dismiss="modal">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Toggle between modals -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Model 2</button>
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Example for toggle between modal 2</h4>
+                    <button class="btn btn-danger btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal3">Model 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Example for toggle between modal 3</h4>
+                    <button class="btn btn-danger btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#modal2">Model 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
