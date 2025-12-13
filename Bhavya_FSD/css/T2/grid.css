@@ -1,6 +1,6 @@
 .g1{
     display: grid;
-    grid-template-columns: 200px 1fr 2fr;/*fixed fr fr*/
+    grid-template-columns:200px 1fr 2fr;/*fixed fr fr*/
     grid-template-rows: 1fr 2fr;
     gap: 10px;
     background-color: gray;

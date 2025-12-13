@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Tables side-by-side */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+}
+
+/* Default colors */
+.table1 {
+    background-color: blue;
+}
+.table2 {
+    background-color: green;
+}
+
+/* Basic border */
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Portrait mode → Swap colors */
+@media (orientation: portrait) {
+    .table1 {
+        background-color: green;
+    }
+    .table2 {
+        background-color: blue;
+    }
+}
+
+/* Responsive stacking if screen width becomes narrow */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;   /* Tables become vertical */
+    }
+
+    table {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <table class="table1">
+        <tr><td>A1</td><td>A2</td><td>A3</td></tr>
+        <tr><td>A4</td><td>A5</td><td>A6</td></tr>
+        <tr><td>A7</td><td>A8</td><td>A9</td></tr>
+    </table>
+
+    <table class="table2">
+        <tr><td>B1</td><td>B2</td><td>B3</td></tr>
+        <tr><td>B4</td><td>B5</td><td>B6</td></tr>
+        <tr><td>B7</td><td>B8</td><td>B9</td></tr>
+    </table>
+</div>
+
+</body>
+</html>

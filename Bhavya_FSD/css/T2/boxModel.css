@@ -1,12 +1,12 @@
 body{
     height: 1500px;
-    background-color: black;
+    background-color: blueviolet;
 }
 .box1
 {
-    width: 400px;
+    width: 1300px;
     height: 500px;
-    margin: 50px auto;/*Space between the border and surrounding elements.*/
+    margin: 100px auto ;/*Space between the border and surrounding elements.*/
     padding: 20px;/*Space between content and border.*/
     border: 3px solid pink;
     background-image: url(../../images/cat2.jpeg);/*writing in url is imp*/
@@ -21,7 +21,7 @@ body{
         cover — fill box completely, possibly crop
         contain — show the entire image, may leave space
     */
-    background-repeat: repeat;/* if background is bigger than the image then image will repeat
+    background-repeat:repeat;/* if background is bigger than the image then image will repeat
     Possible values: 
         repeat — tile both directions (default)
         repeat-x — horizontal only
@@ -77,7 +77,8 @@ body{
     background-color: lightblue;
     background-repeat:repeat-x ;
     background-position:bottom right ;
-    background-size: contain;
+    background-size: 30%;
+    
     }
 .box4
 {
@@ -92,14 +93,14 @@ body{
     background-repeat:repeat-x ;
     background-position:bottom right ;
     background-size: contain;
-    background-clip:padding-box;/*How far the background (color/image) extends within the box model.
+    background-clip:content-box;/*How far the background (color/image) extends within the box model.
     possible values: 
         border-box – painted under border (default)
         padding-box – stops at inner edge of border
         content-box – painted only behind content/padding excluded
         text – (background visible through letters only)
     */
-    box-sizing: padding-box;/*Possible values:
+    box-sizing:border-box;/*Possible values:
     content-box (default) → width/height exclude padding & border.
     border-box → width/height include padding & border inside them.;*/
 }

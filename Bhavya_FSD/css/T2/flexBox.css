@@ -4,8 +4,8 @@
     padding: 15px;
     flex-direction: row;/*row-reverse/column/column-reverse*/
     gap:10px;
-    justify-content: space-between;/*space-between,space-around,space-evenly,start,end,center*/
-    align-items: center;/*puts content vertically according to given args (*requires height*)
+    justify-content: space-around;/*space-between,space-around,space-evenly,start,end,center*/
+    align-items: flex-end;/*puts content vertically according to given args (*requires height*)
     possible values:flex-end/flex-start/center
     */
     height: 500px;
@@ -20,10 +20,12 @@
     border-radius: 40px;
 }
 /* Following will make changes in Box 2 */
-/* .box:nth-child(2)
+.box:nth-child(2)
 {
-    order: -1;/*Possible values:0,-1,1
+     order: 1;
+     /* Possible values: */
+     /* 0,-1,1 */
     background-color: yellow;
-    /* flex:grow shrink basis 
-    flex:1 1 100px;
-} */
+     flex:1 -10 150px 
+    /* flex:1 1 100px; */
+}

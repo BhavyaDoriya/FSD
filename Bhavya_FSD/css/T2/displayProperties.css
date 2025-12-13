@@ -4,7 +4,7 @@
 .d1 div{ 
     /* Height & width will not work in following cause of display:inline */
     display: inline;
-    padding: 20px;
+    padding: 40px;
     width: 150px;
     height: 150px;
     text-align: center;

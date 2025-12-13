@@ -16,7 +16,7 @@ body{
     font-weight:900;
     background: linear-gradient(to right ,blue,green,orange,purple,yellow,pink);
     background-clip: text;
-    color:transparent;
+    /* color:transparent; */
 }
 .r1{
     width: 300px;

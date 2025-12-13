@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* -------------------------------------- */
+/*   GLOBAL CSS VARIABLES                 */
+/* -------------------------------------- */
+:root {
+    --section-height: 20vh;
+    --border-hover: 2px solid red;
+    --title-hover-color: red;
+    --para-hover-indent: 2cm;
+    --para-hover-transform: capitalize;
+}
+
+/* -------------------------------------- */
+/*   SECTION STYLES                       */
+/* -------------------------------------- */
+.section {
+    width: 100%;
+    height: var(--section-height);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* Hover on section → red border */
+.section:hover {
+    border: var(--border-hover);
+}
+
+/* Title hover → change text to red */
+.section h2:hover {
+    color: var(--title-hover-color);
+}
+
+/* Paragraph hover → 2cm indent + capitalize */
+.section p:hover {
+    text-indent: var(--para-hover-indent);
+    text-transform: var(--para-hover-transform);
+}
+
+</style>
+</head>
+<body>
+
+<div class="section" style="background-color: lightyellow;">
+    <h2>Section One</h2>
+    <p>This is the first section of the page.</p>
+</div>
+
+<div class="section" style="background-color: lightblue;">
+    <h2>Section Two</h2>
+    <p>This paragraph belongs to the second section.</p>
+</div>
+
+<div class="section" style="background-color: lightgreen;">
+    <h2>Section Three</h2>
+    <p>Here is the content of the third section.</p>
+</div>
+
+</body>
+</html>
