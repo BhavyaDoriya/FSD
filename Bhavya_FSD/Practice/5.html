@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="alert alert-dismissible alert-success fade show">
+                This is an alert
+
+        <button class="btn-close" data-bs-dismiss="alert" ></button>
+    </div>
+    <div class="dropdown ">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Check</button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Option 1</a>
+            <a href="#" class="dropdown-item">Option 2</a>
+            <a href="#" class="dropdown-item">Option 3</a>
+        </div>
+    </div>
+    <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#mycollapse">Collapse</button>
+    <div class="collapse" id="mycollapse">
+        <div class="card card-body w-25 mt-3">
+            This is a text
+        </div>
+    </div>
+    <div class="accordion " id="myaccordion" >
+        <div class="accordion-item">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">Q1</button>
+            <div class="accordion-body collapse" id="one" data-bs-parent="#myaccordion"> 
+                This is accordion body
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#two">Q2</button>
+            <div class="accordion-body collapse" id="two" data-bs-parent="#myaccordion"> 
+                This is accordion body
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#three">Q3</button>
+            <div class="accordion-body collapse" id="three" data-bs-parent="#myaccordion"> 
+                This is accordion body
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+                <a href="#" class="navbar-brand" ><img src="../images/bhatia.jpg" class=" d-inline-block rounded-circle w-25 h-25" > My website</a>
+            
+            <div class="nav"></div>
+            <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                <Span class="navbar-toggler-icon"></Span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Email</a></li>
+                        <li><a href="#" class="dropdown-item">Phone</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="scrollspy">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-auto nav-pills">
+                <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#scrollspy" >
+        <div id="Home" class="bg-info" style="height:700px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nostrum temporibus magnam repudiandae nihil architecto illum facere repellendus ullam, at itaque aliquid veritatis assumenda ex totam unde sapiente nobis corporis?</div>
+        <div id="About" class="bg-success "  style="height:700px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit illo quam consequuntur eum non incidunt laudantium voluptatem fugiat. Porro culpa quo rerum blanditiis cum neque voluptas laboriosam rem doloremque.</div>
+        <div id="Contact" class="bg-warning"  style="height:700px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint sequi neque error sit dolorum excepturi repellat cum, magni aut minus beatae voluptatum autem perferendis debitis, blanditiis quisquam? Vel, dicta!</div>
+    </div>
+    <ul class="pagination">
+        <li class="pagination-item" ><a href="#" class="page-link">Prev</a></li>
+        <li class="pagination-item" ><a href="#" class="page-link">1</a></li>
+        <li class="pagination-item" ><a href="#" class="page-link">2</a></li>
+        <li class="pagination-item" ><a href="#" class="page-link">Next</a></li>
+    </ul>
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" id="mycarousel">
+        <div class="carousel-indicators">
+            <button data-bs-slide-to="0" class="active" data-bs-target="#mycarousel"></button>
+            <button data-bs-slide-to="1" class="" data-bs-target="#mycarousel"></button>
+            <button data-bs-slide-to="2" class="" data-bs-target="#mycarousel"></button>
+        </div>
+        <div class="carousel-inner bg-dark">
+            <div class="carousel-item active" data-bs-interval="2000" id="one">
+                <img src="../images/car.png" alt="img" class="d-block mx-auto" height="500">
+                <div class="carousel-caption">
+                    <h5>THis is slide 1</h5>
+                 </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="2000" id="two">
+                <img src="../images/beatles.jpg" alt="img" class="d-block mx-auto" height="500">
+                <div class="carousel-caption">
+                    <h5>THis is slide 1</h5>
+                 </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" id="three">
+                <img src="../images/wham2.jpg" alt="img" class="d-block mx-auto" height="500">
+                <div class="carousel-caption">
+                    <h5>THis is slide 1</h5>
+                 </div>
+            </div>
+                 <button class="carousel-control-prev" data-bs-target="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" data-bs-target="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span></button>
+        </div>
+    </div>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mymodal">
+        Click
+    </button>
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog model-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">This is Title</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorum harum magni quibusdam, itaque ipsam suscipit libero doloremque? Ratione sunt aperiam ullam, non aspernatur quaerat soluta omnis hic aliquid adipisci!
+                    Quisquam, non repellendus inventore obcaecati ad qui illum mollitia beatae nemo quas minima porro voluptate est officia dolore consequuntur officiis sint! Doloremque laboriosam atque suscipit similique mollitia dolore? Cupiditate, asperiores.
+                    Libero dolorem explicabo nam saepe exercitationem non vitae rem commodi error blanditiis similique perspiciatis eveniet excepturi, quia tempora quisquam! Dolorum vel est aut amet magni incidunt provident repellendus cumque rerum?
+                    Magni ab exercitationem deleniti adipisci iusto distinctio molestiae aliquam laborum repudiandae ex, similique autem quis quia rerum id voluptatem. Odit, consectetur dolorum! Deserunt incidunt praesentium fuga culpa, quod architecto? Sunt!
+                    Ducimus quis excepturi magnam, praesentium quibusdam voluptas nisi totam pariatur placeat iusto, voluptatem doloribus repellat maiores odio aliquid illum molestias id vero deserunt, error officia cupiditate! Tenetur nobis ducimus error!
+                    Provident alias nisi repudiandae quisquam magnam, nobis vel! Odit ullam eligendi sed nemo pariatur laborum accusantium, exercitationem officiis distinctio consequuntur eos veniam repellendus inventore, deserunt at quia dicta dolore iure!
+                    Sed a velit ipsum sit dicta, ex, voluptas molestias officiis ipsa in obcaecati eius voluptatibus quo hic temporibus architecto nesciunt. Repellat, perspiciatis. Soluta laborum qui, voluptate eaque impedit accusamus id?
+                    Exercitationem quidem fugit aspernatur qui aliquam quia iste recusandae nobis, voluptates reiciendis, corporis molestiae, nam nulla ex dolorem omnis! Laborum, ipsum modi quae quis perferendis exercitationem ullam autem ad aliquam.
+                    Facilis distinctio fuga, id fugit repudiandae placeat doloribus adipisci ipsam ipsa ex numquam! Perspiciatis, delectus, eum quod dolor assumenda facilis quo eius eaque repellendus hic perferendis, consectetur animi veniam officiis?
+                    Laboriosam, eius eaque obcaecati non porro cumque est adipisci, accusamus corporis nihil aliquid soluta vero dignissimos libero quos ratione ea excepturi assumenda maxime? Quos hic ipsum perferendis eius, harum quasi.
+                    Molestiae nihil aperiam rerum quam tempore. Ullam ab vitae corporis, distinctio quis facere, et vero adipisci aperiam accusamus qui quas? Ipsum ad blanditiis hic in eum assumenda quaerat saepe voluptatum!
+                    Deserunt, eos consequatur quos excepturi illum praesentium. Corporis optio magni, fuga ex nemo assumenda facilis deserunt debitis vel deleniti laudantium, eaque aspernatur saepe recusandae ratione nobis quibusdam accusantium commodi! Amet.
+                    Excepturi et dolorem ullam eligendi alias numquam necessitatibus quam a itaque in nam, animi error non, ex temporibus recusandae officiis id tenetur. Quaerat quas quibusdam vero ad laboriosam qui fugit.
+                    Incidunt omnis esse officia accusantium commodi. Repellendus eius beatae, enim, omnis aspernatur temporibus ex necessitatibus exercitationem pariatur tenetur iusto totam repudiandae. Odio odit ipsum excepturi voluptate dignissimos sequi magni ducimus?
+                    Officia quos quaerat, nobis rem omnis cupiditate eligendi sapiente culpa illo odio quis! Veritatis, quisquam ullam! Exercitationem facilis laudantium vel distinctio delectus quia suscipit, eveniet, a in minus non temporibus!
+                    Neque accusamus, deleniti dolorum ut perferendis sequi quia minima voluptas nesciunt nostrum repudiandae officiis. Ipsum suscipit quae earum sunt doloribus amet voluptates eligendi accusamus dignissimos sit quod, pariatur recusandae unde.
+                    Beatae deleniti consequatur alias, cumque quos aut ipsam autem! Repudiandae cumque non incidunt rerum sint sed, dolor dolorum similique consequuntur libero recusandae at a voluptate. Dolores inventore dicta iusto delectus!
+                    Quisquam omnis ab facilis, quibusdam obcaecati mollitia ullam veniam enim perspiciatis maxime, eius corrupti. Ea, eligendi beatae sed ut assumenda aut asperiores quidem nulla optio minima inventore ex expedita quasi.
+                    Minima quidem ut at iste, officiis aliquam culpa asperiores est quia cupiditate assumenda itaque earum expedita corporis tempore voluptatibus recusandae? Repudiandae optio ex quisquam odio distinctio sapiente quas nemo nulla!
+                    Rem, quibusdam modi! Esse illum aut odio iste inventore corrupti voluptatem at error numquam ullam blanditiis, doloribus excepturi temporibus libero corporis voluptatum tenetur veniam eligendi dicta! Nulla cum consequuntur facilis.Distinctio, ipsum placeat iure aspernatur assumenda esse voluptate? Facere molestias nesciunt asperiores unde quos dolorum. Soluta repellat numquam nostrum quis impedit porro!
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#mycanvas">Add to Cart</button>
+    <div class="offcanvas offcanvas-end" id="mycanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">This is a Product</h5>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <img src="../images/wham2.jpg" alt="img" class="img-fluid w-100 d-inline">
+                </div>
+                <div class="col-6 ">
+                    <p >Wham Poster</p>
+                    <div class="pagination ">
+                        <p class="pagination-item"><a href="#" class="page-link">-</a></p>
+                        <p class="pagination-item"><a href="#" class="page-link">1</a></p>
+                        <p class="pagination-item"><a href="#" class="page-link">+</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

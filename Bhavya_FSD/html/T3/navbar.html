@@ -1,38 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-  </head>
-  <body style="padding:70px;">
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a href="https://www.google.com" class="navbar-brand"><i class="bi bi-instagram"></i> instagram</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcontent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navcontent">
-            <ul class="navbar-nav mb-2 ms-auto">
-                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                        <li class=""><a href="#" class="dropdown-item">company</a></li>
-                        <li class=""><a href="#" class="dropdown-item">staff</a></li>
-                    </ul>
-                    <li class="nav-item"><a href="#" class="nav-link disabled">contact</a>
-                    </li>
+    <title>Document</title>
+</head>
+<body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand"><b class="bi bi-twitter"></b>  Twitter</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcontent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navcontent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mb-2 ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Company</a> </li>
+                            <li><a class="dropdown-item" href="#">Staff</a> </li>
+                        </ul></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Contact</a></li>
+                </ul>
+                <div class="p-2 bg-warning"></div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="dropdown">
+        <button class="dropdown-toggle btn btn-warning" data-bs-toggle="dropdown">Click</button>
+    <div class="dropdown-menu">
+         <div class="dropdown-item">X</div>
+         <div class="dropdown-item">Y</div>
+    </div> 
+</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../../images/favicon.png" alt="" class="img-fluid rounded-circle d-inline-block"></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navX" ><span class="navbar-toggler-icon"></span></button>
+        <div id="navX" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="navbar-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Check</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">T3</li>
+                    <li class="dropdown-item">T3</li>
+                </ul>
                 </li>
             </ul>
         </div>
     </div>
-   </nav> <!--navbar-expand-md/lg//xl/xxl-->
-   <div class="bg-warning w-100" style="height:1000px"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+</nav>
+</body>
 </html>
+
