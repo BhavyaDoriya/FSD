@@ -33,3 +33,8 @@ console.log("Datatype of n is:",typeof(n));//will return object (this is a known
 console.log("Datatype of u is:",typeof(u));//will return undefined
 console.log("Datatype of obj is:",typeof(obj));//will return object
 console.log("Datatype of arr is:",typeof(arr));//will return object (arrays are a type of object in JavaScript)
+
+var a=[{name:"xyz",age:23},{name:"abc",age:45,city:"ahm"}];//array of object
+console.log(a[0]);
+console.log(a[a.length-1]);
+console.log(a[0]["name"]);
