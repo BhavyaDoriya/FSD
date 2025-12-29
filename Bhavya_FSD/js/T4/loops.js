@@ -39,3 +39,4 @@ if(true){
     var y=888;
 }   
 console.log(y);
+
