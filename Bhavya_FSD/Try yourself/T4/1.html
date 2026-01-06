@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p class="description">Item 1</p>
+    <p class="description">Item 2</p>
+    <p class="description">Item 3</p>
+    <script>
+        let i=document.getElementsByClassName("description");
+        for (let i1 of i){
+                i1.innerHTML="<strong>Updated</strong>";
+                i1.setAttribute("title","Updated Paragraph")
+        }
+    </script>
+</body>
+</html>

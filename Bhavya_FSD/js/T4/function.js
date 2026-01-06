@@ -35,3 +35,12 @@ var g=function(a,b){
     return a*b;
 }
 console.log(g(5,6));
+
+// Default Params
+// Every parameter has default value undefined
+//if you do int+undefined it will return NaN
+function cam(a,b=2){
+    return a+b;
+}
+console.log(cam(4));
+console.log(cam(4,5));
